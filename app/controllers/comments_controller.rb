@@ -11,6 +11,14 @@ class CommentsController < ApplicationController
     redirect_to "/pictures/#{@picture.id}"
   end
 
+
+  def destroy
+    @picture = Picture.find(params[:picture_id])
+    Comment.delete(params[:id])
+    flash[:notice] = 'Comment was deleted'
+    redirect_to "/pictures/#{@picture.id}"
+  end
+
   def comment_params
     params.require(:comment).permit(:thoughts)
   end
