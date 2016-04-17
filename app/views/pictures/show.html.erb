@@ -1,3 +1,6 @@
 <p><%= @picture.name %></p>
 <%= image_tag @picture.image.url(:thumb) %>
 <p><%= @picture.description %></p>
+
+<p><%= link_to "Edit picture", edit_picture_path(@picture) %>
+<p><%= link_to "Delete picture", picture_path(@picture), method: :delete %>
