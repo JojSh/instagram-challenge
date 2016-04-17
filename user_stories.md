@@ -10,12 +10,15 @@ As a person
 So that my posts are not permanent
 I would like to be able to edit and delete pictures.
 
+As a person
+So that I can give my picture context
+I would like the option to add a description to the picture
+
 comment on an image
 
 As a person
-So that I can give my image context
+So that I can share my opinions about a picture
 I would like to be able to comment on a posted picture
-
 
 create account:
 

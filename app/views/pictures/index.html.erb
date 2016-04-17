@@ -1,8 +1,6 @@
-
-
 <% if @pictures.any? %>
   <% @pictures.each do |pic| %>
-    <h2><%= pic.name %></h2>
+    <%= link_to pic.name, picture_path(pic) %>
     <%= image_tag pic.image.url(:thumb) %>
   <% end %>
 <% else %>
