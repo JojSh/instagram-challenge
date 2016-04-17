@@ -1,0 +1,12 @@
+
+
+<% if @pictures.any? %>
+  <% @pictures.each do |pic| %>
+    <h2><%= pic.name %></h2>
+    <%= image_tag pic.image.url(:thumb) %>
+  <% end %>
+<% else %>
+  <h1>No pictures to display</h2>
+<% end %>
+
+<%= link_to('Upload a picture', new_picture_path) %>

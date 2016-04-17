@@ -1,20 +1,27 @@
-create account
+post image:
+
+As a person
+So that share my experiences with friends
+I would like to be able to post a picture to Instagram
+
+Read, Update, Delete:
+
+As a person
+So that my posts are not permanent
+I would like to be able to edit and delete pictures.
+
+comment on an image
+
+As a person
+So that I can give my image context
+I would like to be able to comment on a posted picture
+
+
+create account:
 
 As a person
 So that I can access Instagram
 I would like to create a user-account
-
-post image
-
-As a user
-So that share my experiences with friends
-I would like to be able to post a picture to Instagram
-
-comment on own image
-
-As a user
-So that I can give my image context
-I would like to be able to content on my own posted picture
 
 sign in/out
 
@@ -53,7 +60,7 @@ I would like to be able to delete comments made on my pictures
 like another user's image
 
 As a user
-So that I can express my approval of another's picture 
+So that I can express my approval of another's picture
 I would like to be able to "like" another user's picture
 
 receive likes from another user

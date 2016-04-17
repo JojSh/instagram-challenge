@@ -1,0 +1,6 @@
+<%= form_for Picture.new, html: {multipart: true} do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.file_field :image %>
+  <%= form.submit "Anything"%>
+  <% end %>
