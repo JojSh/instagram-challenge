@@ -2,5 +2,20 @@
 <%= image_tag @picture.image.url(:thumb) %>
 <p><%= @picture.description %></p>
 
+<h3>Comments: </h3>
+
+<% if @picture.comments.any? %>
+  <ul>
+    <% @picture.comments.each do |comment| %>
+      <li>
+        <%= comment.thoughts %>
+      </li>
+    <% end %>
+  </ul>
+  <% else %>
+    <p> No comments yet. </p>
+    <% end %>
+
 <p><%= link_to "Edit picture", edit_picture_path(@picture) %>
 <p><%= link_to "Delete picture", picture_path(@picture), method: :delete %>
+<p><%= link_to "Comment", new_picture_comment_path(@picture) %>

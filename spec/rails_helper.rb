@@ -5,7 +5,6 @@ require 'spec_helper'
 require 'rspec/rails'
 require 'capybara/rails'
 
-
 ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
@@ -16,4 +15,13 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
 
   config.filter_rails_from_backtrace!
+end
+
+def upload_picture
+  visit '/pictures'
+  click_link 'Upload a picture'
+  fill_in 'Name', with: 'Park_pic'
+  attach_file 'picture[image]', Rails.root + 'spec/support/uploads/test_pic.png'
+  fill_in 'Description', with: 'A nice day out'
+  click_button 'Submit'
 end

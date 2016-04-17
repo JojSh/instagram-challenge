@@ -1,0 +1,5 @@
+<%= form_for [@picture, @comment] do |form| %>
+  <%= form.label :thoughts %>
+  <%= form.text_area :thoughts %>
+  <%= form.submit "Leave comment" %>
+<% end %>
